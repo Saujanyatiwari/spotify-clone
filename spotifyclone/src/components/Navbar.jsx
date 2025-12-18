@@ -27,15 +27,12 @@ function Navbar(){
                     <img className='w-8 h-8'
                     src={home} alt='home'></img>
                 </div>
-                {/* <div className='bg-[#1F1F1F] flex flex-row h-12 w-72 p-2'>
-                    <img className='w-8 h-8' 
-                    src={search} alt='search'></img>
-                    <h1 className='text-[#9A9A9A] text-lg font-semibold'>What do you want to play?</h1>
-                </div> */}
                 <div className='flex items-center justify-between h-14 bg-[#1f1f1f] rounded-full pl-4 py-3 pr-30 max-w-md mx-auto shadow-xl'>
-      <img className='w-5 h-5 filter invert opacity-70 mr-3' src={search} alt='search' />
-      <h1 className='text-[#9A9A9A] text-lg font-semibold flex-grow'>What do you want to play?</h1>
-    </div>
+                    <img 
+                    className='w-5 h-5 filter invert opacity-70 mr-3' 
+                    src={search} alt='search' />
+                     <h1 className='text-[#9A9A9A] text-lg font-semibold flex-grow'>What do you want to play?</h1>
+                 </div>
             </section>
             <section className='flex flex-row space-x-4'>
                 <img className='w-6 h-6 mt-4'
