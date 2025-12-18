@@ -23,11 +23,11 @@ function Navbar(){
                 </div>
             </section>
             <section className='flex flex-row'>
-                <div className='bg-[#1F1F1F] rounded-full p-3 mr-2'>
+                <div className='bg-[#1F1F1F] rounded-full p-3 mr-2 hover:bg-[#2A2A2A] transform delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-105 cursor-pointer '>
                     <img className='w-8 h-8'
                     src={home} alt='home'></img>
                 </div>
-                <div className='flex items-center justify-between h-14 bg-[#1f1f1f] rounded-full pl-4 py-3 pr-30 max-w-md mx-auto shadow-xl'>
+                <div className='flex items-center justify-between h-14 bg-[#1f1f1f] rounded-full pl-4 py-3 pr-30 max-w-md mx-auto shadow-xl hover:bg-[#2A2A2A] hover:border hover:border-[#7F7F7F]'>
                     <img 
                     className='w-5 h-5 filter invert opacity-70 mr-3' 
                     src={search} alt='search' />
