@@ -17,7 +17,7 @@ function Sidebar(){
     ];
 
     return(
-        <main className='w-[30%]  bg-[#121212] rounded-lg p-4 pr-8 '>
+        <main className='w-[29%]  bg-[#121212] rounded-lg p-4 pr-8 mx-2 '>
             <section className='flex flex-row justify-between items-center'>
                 <div className='text-lg font-bold '>Your Library</div>
                  <div className='flex flex-row items-center'>
