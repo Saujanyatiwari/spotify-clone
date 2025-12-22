@@ -1,10 +1,8 @@
 import react from 'react';
 import Playlist from './Playlist';
-import list from '../assets/list.svg';
 import plus from '../assets/plus.svg';
-import expand from '../assets/expand.svg';
-import search from '../assets/searchicon.svg';
 import {playlistsData} from '../types/sidebar.type.js'
+import {List ,Maximize2 , Search} from 'lucide-react';
 
 function Sidebar(){
    
@@ -18,10 +16,8 @@ function Sidebar(){
                         <img className='w-5 h-4 mx-2 mt-1' src={plus} alt='plus'></img>
                         <h1 className='font-semibold text-base mr-2 '> Create </h1>
                         </div>
-                        <div>
-                            <img className='w-5 h-5' src={expand} alt='expand'></img>
-                        </div>
-                        </div>
+                        <Maximize2 className='w-5 h-5 text-[#B3B3B3] hover:text-white cursor-pointer'/>
+                </div>
             </section>
             
             <section className='flex flex-row mt-4'>
@@ -39,12 +35,10 @@ function Sidebar(){
 
             
             <section className='flex flex-row justify-between mt-6'>
-                <div>
-                    <img className='w-5 h-5' src={search} alt='search'></img>
-                </div>
-                <div className='flex flex-row  '>
-                    <h1 className='text-[#7B7B7B] mr-2 font-semibold text-base hover:text-white'>Recently added</h1>
-                    <img className='w-5 h-5 mt-0.5 hover:text-white' src={list} alt='list'></img>
+                <Search className='w-5 h-5 text-[#B3B3B3] hover:text-white cursor-pointer'/>
+                <div className='flex flex-row text-[#7B7B7B] transform delay-150 duration-300 ease-in-out hover:scale-105 shadow-lg hover:shadow-2xl cursor-pointer  hover:text-white '>
+                    <h1 className=' mr-2 font-semibold text-base'>Recents</h1>
+                    <List  className='w-5 h-5 mt-0.5'/>
                 </div>
             </section>
 

@@ -13,6 +13,8 @@ import speaker from '../assets/speaker.svg';
 import miniplayer from '../assets/miniplayer.svg';
 import fullscreen from '../assets/fullscreen.svg';
 
+import {} from 'lucide-react';
+
 
 function Bottomnavbar(){
 
