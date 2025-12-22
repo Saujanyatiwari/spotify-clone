@@ -4,20 +4,13 @@ import list from '../assets/list.svg';
 import plus from '../assets/plus.svg';
 import expand from '../assets/expand.svg';
 import search from '../assets/searchicon.svg';
-import pictures from '../assets/picture.png';
+import {playlistsData} from '../types/sidebar.type.js'
 
 function Sidebar(){
-    const playlistsData = [
-        { id: 1, title: 'Liked Songs', type: 'Playlist', details: '180 songs', picture: pictures },
-        { id: 2, title: 'Your Top Songs 2025', type: 'Playlist', details: 'Spotify', picture:pictures},
-        { id: 3, title: 'Soothing', type: 'Playlist', details: 'Playlist', picture:  pictures },
-        { id: 4, title: 'Villain Mix', type: 'Playlist', details: 'Spotify', picture:  pictures },
-        { id: 5, title: 'Homework Mix', type: 'Playlist', details: 'Spotify', picture:  pictures },
-        { id: 6, title: 'Darshan Raval Mix', type: 'Playlist', details: 'Spotify', picture:  pictures },
-    ];
+   
 
     return(
-        <main className='w-[29%]  bg-[#121212] rounded-lg p-4 pr-8 mx-2 '>
+        <main className='w-[29%]  bg-[#121212] rounded-lg p-4 pr-8 mx-2 h-138 overflow-y-auto'>
             <section className='flex flex-row justify-between items-center'>
                 <div className='text-lg font-bold '>Your Library</div>
                  <div className='flex flex-row items-center'>
@@ -43,6 +36,8 @@ function Sidebar(){
                 </div>
         
             </section>
+
+            
             <section className='flex flex-row justify-between mt-6'>
                 <div>
                     <img className='w-5 h-5' src={search} alt='search'></img>
@@ -52,9 +47,6 @@ function Sidebar(){
                     <img className='w-5 h-5 mt-0.5 hover:text-white' src={list} alt='list'></img>
                 </div>
             </section>
-            {/* <section>
-                <Playlist/>
-            </section> */}
 
              <section>
                 {playlistsData.map(playlist => (
@@ -67,6 +59,7 @@ function Sidebar(){
                     />
                 ))}
             </section>
+           
         </main>
     )
 }

@@ -1,5 +1,5 @@
 import React from 'react';
-import pictures from '../assets/picture.png';
+import {currentsong} from '../types/bottomnavbar.type.js'
 import Currentsong from './Currentsong';
 import shuffle from '../assets/shuffle.svg';
 import backward from '../assets/backward.png';
@@ -16,9 +16,7 @@ import fullscreen from '../assets/fullscreen.svg';
 
 function Bottomnavbar(){
 
-    const currentsong =[
-        {id:1 , picture:pictures,title:'Jo Tum Mere Ho' , singer:'Anuv jain'},
-    ];
+    
     return(
     <footer className='flex flex-row justify-between px-5 py-3 fixed bottom-0 left-0 w-full h-22 bg-black'>
 

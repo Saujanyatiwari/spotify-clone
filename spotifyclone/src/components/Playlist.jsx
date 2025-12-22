@@ -2,12 +2,12 @@ import React from "react";
 
 function Playlist({picture,title,type,details}){
     return(
-        <main className="flex flex-row items-center p-2 rounded-lg cursor-pointer hover:bg-[#1F1F1F]">
+        <main className="flex flex-row items-center p-2 rounded-lg cursor-pointer hover:bg-[#1F1F1F] mt-0.5">
             <section className="mr-3">
                  <img 
                     src={picture} 
                     alt={title} 
-                    className="w-14 h-14 rounded-lg my-2" 
+                    className="w-14 h-14 rounded-lg mb-1" 
                 />
             </section>
             <section className="flex flex-col justify-center">
