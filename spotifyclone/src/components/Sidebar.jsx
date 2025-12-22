@@ -1,8 +1,8 @@
 import react from 'react';
 import Playlist from './Playlist';
-import plus from '../assets/plus.svg';
+// import plus from '../assets/plus.svg';
 import {playlistsData} from '../types/sidebar.type.js'
-import {List ,Maximize2 , Search} from 'lucide-react';
+import {List ,Maximize2 , Search, Plus} from 'lucide-react';
 
 function Sidebar(){
    
@@ -13,7 +13,8 @@ function Sidebar(){
                 <div className='text-lg font-bold '>Your Library</div>
                  <div className='flex flex-row items-center'>
                     <div className='bg-[#1F1F1F] flex flex-row rounded-full p-2 mt-[-1] mr-4 hover:bg-[#2A2A2A] cursor-pointer'>
-                        <img className='w-5 h-4 mx-2 mt-1' src={plus} alt='plus'></img>
+                        {/* <img className='w-5 h-4 mx-2 mt-1' src={plus} alt='plus'></img> */}
+                        <Plus className='w-6 h-6  text-[#B3B3B3] mx-2 '/>
                         <h1 className='font-semibold text-base mr-2 '> Create </h1>
                         </div>
                         <Maximize2 className='w-5 h-5 text-[#B3B3B3] hover:text-white cursor-pointer'/>

@@ -1,19 +1,10 @@
 import React from 'react';
 import {currentsong} from '../types/bottomnavbar.type.js'
 import Currentsong from './Currentsong';
-import shuffle from '../assets/shuffle.svg';
-import backward from '../assets/backward.png';
-import pause from '../assets/pause.svg'
-import forward from '../assets/forward.png'
-import repeat from '../assets/repeat.svg'
-import microphone from '../assets/microphone.svg';
 import queue from '../assets/queue.svg';
-import device from '../assets/device.svg';
-import speaker from '../assets/speaker.svg';
 import miniplayer from '../assets/miniplayer.svg';
-import fullscreen from '../assets/fullscreen.svg';
 
-import {} from 'lucide-react';
+import {Shuffle,SkipBack ,CirclePause, SkipForward , RotateCwSquare , MicVocal,Maximize,Volume2 ,Smartphone} from 'lucide-react';
 
 
 function Bottomnavbar(){
@@ -34,17 +25,17 @@ function Bottomnavbar(){
         </section>
 
         <section>
-            <div className='flex flex-row justify-center'>
-                <img className='w-5 h-5 mr-6 mt-3'
-                src={shuffle} alt='shuffle'/>
-                <img className='w-4 h-4 mr-6 mt-3'
-                src={backward} alt='backward'/>
-                <img className='w-11 h-11 mr-6 mt-[-1]'
-                src={pause} alt='pause'/>
-                <img className='w-4 h-4 mr-6 mt-3'
-                src={forward} alt='forward'/>
-                <img className='w-5 h-5 mr-6 mt-3'
-                src={repeat} alt='repeat'/>   
+            <div className='flex flex-row justify-center '>
+                <Shuffle className='w-5 h-5 mr-6 mt-3 text-[#B3B3B3] hover:text-white cursor-pointer
+                    transform delay-150 duration-300 ease-in-out hover:scale-105 shadow-lg hover:shadow-2xl'/>
+                <SkipBack className='w-5 h-5 mr-6 mt-3 text-[#B3B3B3] fill-[#B3B3B3] hover:text-white fill-white cursor-pointer
+                    transform delay-150 duration-300 ease-in-out hover:scale-105 shadow-lg hover:shadow-2xl'/>
+                <CirclePause className='w-11 h-11 mr-6 mt-[-1] text-black fill-white cursor-pointer
+                    transform delay-150 duration-300 ease-in-out hover:scale-105 shadow-lg hover:shadow-2xl'/>
+                <SkipForward className='w-5 h-5 mr-6 mt-3 text-[#B3B3B3] fill-[#B3B3B3] hover:text-white fill-white cursor-pointer
+                    transform delay-150 duration-300 ease-in-out hover:scale-105 shadow-lg hover:shadow-2xl'/>
+                < RotateCwSquare className='w-5 h-5 mr-6 mt-3 text-[#B3B3B3] rotate-180 hover:text-white cursor-pointer
+                    transform delay-150 duration-300 ease-in-out hover:scale-105 shadow-lg hover:shadow-2xl' />
             </div>
 
             <div className='flex flex-row justify-between'>
@@ -58,23 +49,23 @@ function Bottomnavbar(){
         </section>
 
         <section className='flex flex-row gap-4 mt-5'>
-            <img className='w-6 h-6'
-            src={microphone} alt='microphone'/>
+            <MicVocal  className='w-5 h-5 text-[#B3B3B3] hover:text-white cursor-pointer
+                    transform delay-150 duration-300 ease-in-out hover:scale-105 shadow-lg hover:shadow-2xl'/>
             <img className='w-5 h-5'
             src={queue} alt='queue'/>
-            <img className='w-5 h-5'
-            src={device} alt='device'/>
+            <Smartphone className='w-5 h-5 text-[#B3B3B3] hover:text-white cursor-pointer
+                    transform delay-150 duration-300 ease-in-out hover:scale-105 shadow-lg hover:shadow-2xl'/>
             <div className='flex flex-row gap-1'>
-                <img className='w-5 h-5'
-            src={speaker} alt='speaker'/>
+            <Volume2 className='w-5 h-5 text-[#B3B3B3] hover:text-white cursor-pointer
+                    transform delay-150 duration-300 ease-in-out hover:scale-105 shadow-lg hover:shadow-2xl'/>
             <div className='h-1 w-20 rounded-lg bg-[#7B7B7B] mt-2'>
                 <div></div>
             </div>
             </div>
             <img className='w-5 h-5'
             src={miniplayer} alt='miniplayer'/>
-            <img className='w-5 h-5'
-            src={fullscreen} alt='fullscreen'/>
+            <Maximize className='w-5 h-5 text-[#B3B3B3] hover:text-white cursor-pointer
+                    transform delay-150 duration-300 ease-in-out hover:scale-105 shadow-lg hover:shadow-2xl'/>
             
         </section>
     </footer>

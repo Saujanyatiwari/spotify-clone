@@ -1,5 +1,5 @@
-import minus from '../assets/minus.svg';
-import add from '../assets/add.svg';
+
+import {CircleMinus,CirclePlus} from 'lucide-react';
 
 function Currentsong( {picture , title , singer}){
 return(
@@ -15,10 +15,14 @@ return(
                     <p className='font-semibold text-sm text-[#7B7B7B]'>{singer}</p>
                 </div>
                 <div className='flex flex-row justify-center mt-5'>
-                    <img className='w-5 h-5 mr-3'
-                    src={minus} alt='minus'/>
-                    <img className='w-5 h-5'
-                    src={add} alt='add'/>
+                    {/* <img className='w-5 h-5 mr-3'
+                    src={minus} alt='minus'/> */}
+                    <CircleMinus className='w-5 h-5 mr-3 text-[#B3B3B3] hover:text-white cursor-pointer
+                    transform delay-150 duration-300 ease-in-out hover:scale-105 shadow-lg hover:shadow-2xl'/>
+                    {/* <img className='w-5 h-5'
+                    src={add} alt='add'/> */}
+                    <CirclePlus className='w-5 h-5 text-[#B3B3B3] hover:text-white cursor-pointer
+                    transform delay-150 duration-300 ease-in-out hover:scale-105 shadow-lg hover:shadow-2xl'/>
                 </div>
             </section>
     
