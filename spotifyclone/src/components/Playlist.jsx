@@ -11,8 +11,8 @@ function Playlist({picture,title,type,details}){
                 />
             </section>
             <section className="flex flex-col justify-center">
-                <div className="font-bold text-md text-white truncate">{title}</div>
-                <div className="flex flex-row text-base font-semibold text-[#7B7B7B]">
+                <div className="font-bold text-base text-white truncate">{title}</div>
+                <div className="flex flex-row text-sm font-semibold text-[#7B7B7B]">
                     <div className="mr-1">{type}</div>
                     <div className='mr-1'>•</div>
                     <div>{details}</div>
