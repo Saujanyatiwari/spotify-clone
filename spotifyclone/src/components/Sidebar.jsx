@@ -35,7 +35,7 @@ function Sidebar() {
             
             <article className='flex-1 min-h-0 overflow-y-auto mt-6 custom-scrollbar'>
                 <section className='flex flex-row justify-between'>
-                    <Search className='w-5 h-5 text-[#B3B3B3] hover:text-white cursor-pointer'/>
+                    <Search className='w-5 h-5 ml-1 text-[#B3B3B3] hover:text-white cursor-pointer'/>
                     <div className='flex flex-row text-[#7B7B7B] transform delay-150 duration-300 ease-in-out hover:scale-105 shadow-lg hover:shadow-2xl cursor-pointer hover:text-white '>
                         <h1 className=' mr-2 font-semibold text-base'>Recents</h1>
                         <List className='w-5 h-5 mt-0.5'/>
